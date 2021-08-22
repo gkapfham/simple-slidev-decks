@@ -1,0 +1,16 @@
+[build.environment]
+  NODE_VERSION = "14"
+
+[build]
+  publish = "dist"
+  command = "npx pnpm i --store=node_modules/.pnpm-store && npx pnpm run build"
+
+[[redirects]]
+  from = "/week-one/*"
+  to = "/week-one/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/week-two/*"
+  to = "/week-two/index.html"
+  status = 200
